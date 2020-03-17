@@ -1,6 +1,6 @@
 # Antivirus
 
-This project sets up a collaborative environment for data scientists to have readily accessible resources and dependencies to work with JHU CSSE's data for COVID-19 cases. 
+This project sets up a collaborative environment for data scientists to have readily available resources and dependencies to work with JHU CSSE's data for COVID-19 cases. 
 
 The data is directly fetched raw from JHU's repository: https://github.com/CSSEGISandData/COVID-19.
 

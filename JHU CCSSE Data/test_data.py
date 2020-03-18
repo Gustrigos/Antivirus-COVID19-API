@@ -14,10 +14,14 @@ def data_type(data):
 # Use case for Confirmed
 metadata, timeseries = data_type(df_confirmed)
 
-country = "US"
+country = "Mexico"
 
 # data of a particular country
-country_data = timeseries.loc[country].sum(axis=0)
+try:
+	country_data = timeseries.loc[country]
+except:
+	country_data = timeseries.loc[country].sum(axis=0)
+
 country_data.index = pd.to_datetime(country_data.index)
 
 today = country_data.index[-1].date()

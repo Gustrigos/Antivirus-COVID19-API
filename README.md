@@ -1,8 +1,12 @@
 # Antivirus
 
-This project sets up a collaborative environment for data scientists to have readily available resources and dependencies to work with JHU CSSE's data for COVID-19 cases. 
+This project sets up a collaborative environment for data scientists to have readily available resources and dependencies to work with relevant data for COVID-19 cases. In this repository, there are two data sources currently available:
 
-The data is directly fetched raw from JHU's repository: https://github.com/CSSEGISandData/COVID-19.
+1) John Hopkins University CSSE (JHU CSSE): timeseries data that tracks confirmed,recovered, and diseased cases of COVID-19.*
+2) Refinitiv (Thomson Reuters Eikon): news headlines and news articles for COVID-19.
+
+* The data is directly fetched raw from JHU's repository: https://github.com/CSSEGISandData/COVID-19.
+**
 
 ## Collaboration with Git
 To collaborate in this project, first clone the following URL: https://github.com/Gustrigos/Antivirus.git.

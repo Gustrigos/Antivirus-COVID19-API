@@ -65,7 +65,7 @@ def plot_countries(country_list,start_date,end_date):
 # Use case for Confirmed
 metadata, timeseries = data_type(df_confirmed)
 
-country = "US"
+country = "Mexico"
 critical_country_list = ['US', 'Mexico', 'Italy','France','Iran']
 latam_country_list = ['Mexico','Colombia','Peru','Ecuador','Argentina','Uruguay','Chile'] 
 
@@ -77,7 +77,6 @@ start_date = dt.date(2020,3,1)
 end_date = today
 
 cumulative_df, growth_df = plot_countries(country_list,start_date=start_date,end_date=end_date)
-
 
 plt.show()
 

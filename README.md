@@ -4,8 +4,8 @@ This project sets up a collaborative environment for data scientists to have rea
 
 1) John Hopkins University CSSE (JHU CSSE): timeseries data that tracks confirmed,recovered, and diseased cases of COVID-19.
 - The data is directly fetched raw from JHU's repository: https://github.com/CSSEGISandData/COVID-19.
-2) Refinitiv (Thomson Reuters Eikon): news headlines and news articles for COVID-19.
-3) Twitter: tweets from a selected number of users as an alternative source of news for COVID-19.
+2) Refinitiv (Thomson Reuters Eikon): news headlines and news articles for COVID-19 from Eikon's API.
+3) Twitter: tweets from a selected number of users as an alternative source of news for COVID-19 from Twitter's API.
 
 ## Collaboration with Git
 To collaborate in this project, first clone the following URL: https://github.com/Gustrigos/Antivirus.git.
@@ -18,7 +18,7 @@ git clone https://github.com/Gustrigos/Antivirus.git.
 ## Environment Setup
 This project works with Python 3.7 or later.
 
-To start, create a virtual environment, activates it, and install all the dependencies needed for this project. 
+To start, create a virtual environment, activate it, and install all the dependencies needed for this project. 
 
 ```cmd
 python3 -m venv env

@@ -1,11 +1,16 @@
 # Antivirus
 
+## Data Sources
 This project sets up a collaborative environment for data scientists to have readily available resources and dependencies to work with relevant data for COVID-19 cases. In this repository, there are three data sources currently available:
 
 1) John Hopkins University CSSE (JHU CSSE): timeseries data that tracks confirmed,recovered, and diseased cases of COVID-19.
 - The data is directly fetched raw from JHU's repository: https://github.com/CSSEGISandData/COVID-19.
 2) Refinitiv (Thomson Reuters Eikon): news headlines and news articles for COVID-19 from Eikon's API.
 3) Twitter: tweets from a selected number of users as an alternative source of news for COVID-19 from Twitter's API.
+
+## Models
+To test our data sources, we introduce the SEIR epidemologist model and create an API with Flask to output data about the estimates that the model calculates. 
+
 
 ## Collaboration with Git
 To collaborate in this project, first clone the following URL: https://github.com/Gustrigos/Antivirus.git.

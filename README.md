@@ -1,10 +1,11 @@
 # Antivirus
 
-This project sets up a collaborative environment for data scientists to have readily available resources and dependencies to work with relevant data for COVID-19 cases. In this repository, there are two data sources currently available:
+This project sets up a collaborative environment for data scientists to have readily available resources and dependencies to work with relevant data for COVID-19 cases. In this repository, there are three data sources currently available:
 
 1) John Hopkins University CSSE (JHU CSSE): timeseries data that tracks confirmed,recovered, and diseased cases of COVID-19.
 - The data is directly fetched raw from JHU's repository: https://github.com/CSSEGISandData/COVID-19.
 2) Refinitiv (Thomson Reuters Eikon): news headlines and news articles for COVID-19.
+3) Twitter: tweets from a selected number of users as an alternative source of news for COVID-19.
 
 ## Collaboration with Git
 To collaborate in this project, first clone the following URL: https://github.com/Gustrigos/Antivirus.git.
@@ -25,15 +26,16 @@ source ./env/bin/activate
 pip3 install -r requirements.txt
 ```
 
-## Fetching Data 
-fetch_data.py gets timeseries data for confirmed, death, and recovered cases directly from JHU CSSE's COVID-19 repository in raw csv format. It then stores each list into a pandas dataframe object. 
+## Confirmed, Deaths, Recovered Data
+### Fetching Data 
+Data/JHU/fetch_data.py gets timeseries data for confirmed, death, and recovered cases directly from JHU CSSE's COVID-19 repository in raw csv format. It then stores each list into a pandas dataframe object. 
 
-## Use Case 1: Visualizing Mexico's Confirmed Cases
+### Use Case 1: Visualizing Mexico's Confirmed Cases
 test_data.py introduces the function plot_country to visualize confirmed cases for any country up to date with pandas and matplotlib. It renders the following graph:
 
 ![alt text](https://raw.githubusercontent.com/Gustrigos/Antivirus/master/confirmed_mexico.png)
 
-## Use Case 2: Visualizing Latin America's Confirmed Cases
+### Use Case 2: Visualizing Latin America's Confirmed Cases
 test_data.py introduces the function plot_countries to visualize confirmed cases for a group of countries up to date with pandas and matplotlib. It renders the following graph:
 
 ![alt text](https://raw.githubusercontent.com/Gustrigos/Antivirus/master/confirmed_latam.png)
